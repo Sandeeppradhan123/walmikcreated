@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNg.InclusionExclusion">
+      
+      <methods>
+      
+<!--       <exclude name = "Searchbox"></exclude> -->
+           <include name = "login"></include>
+<!--            <include name = "Searchbox"></include> -->
+     </methods>
+<!--      we can perform include exclude operation in under class tag then under methods tag(multiple class IE operation possible -->
+      </class>       
+    
+       <class name = "TestNg.Test2" >
+       <methods>
+        <include name = "avtar"></include>
+        <include name = "alert"></include>
+       </methods>     
+          </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+     
+              
+       
+      
+    
+       
+          
+      
+      
+      
