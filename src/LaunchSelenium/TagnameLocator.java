@@ -18,7 +18,7 @@ System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver_win32\
 		Thread.sleep(2000);
 		
 		WebElement tagname = driver.findElement(By.tagName("a"));
-		
+		System.out.println(tagname);
 		tagname.click();
 	}
 

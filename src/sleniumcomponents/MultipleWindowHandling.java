@@ -47,7 +47,7 @@ public class MultipleWindowHandling {
 			
 	    }
 		
-		driver.switchTo().window(windid [1]);
+		driver.switchTo().window(windid [2]);
 		
 		driver.get("https://www.google.co.in/");
 		

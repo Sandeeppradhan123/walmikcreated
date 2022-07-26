@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="pomtest.DashBoardTest">
+      <class name="pomtest2.Logintest2">
         <methods>
-          <include name="initBrowser"/>
-          <include name="search"/>
-          <include name="CreateObject"/>
+          <include name="createobject"/>
+          <include name="verifyurl"/>
+          <include name="initbrowser"/>
         </methods>
-      </class> <!-- pomtest.DashBoardTest -->
+      </class> <!-- pomtest2.Logintest2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

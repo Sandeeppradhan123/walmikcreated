@@ -1,5 +1,7 @@
 package sleniumcomponents;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +24,9 @@ public class PopupHandling {
 			
 			alertbutton.click();
 			
-			Thread.sleep(2000);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			
+		//	Thread.sleep(2000);
 			
 			String textonalertpopup = driver.switchTo().alert().getText();
 			

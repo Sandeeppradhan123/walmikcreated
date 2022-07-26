@@ -18,23 +18,35 @@ public class DropdownHandlingByUsingSalectClass {
 					
 			driver.manage().window().maximize();
 					
+//			driver.get("https://www.facebook.com/signup");
+//					
+//			WebElement day = driver.findElement(By.xpath("//*[@id='day']"));
+//			
+//			
+//		     Select daysel = new Select(day);			
+//			
+//		     daysel.selectByVisibleText("23");
+//		     
+//		     Thread.sleep(2000);
+//		     
+//		     daysel.selectByIndex(15);
+//		     
+//		     Thread.sleep(2000);
+//		     
+//		     daysel.selectByValue("10");
+
 			driver.get("https://www.facebook.com/signup");
-					
+			
 			WebElement day = driver.findElement(By.xpath("//*[@id='day']"));
 			
+			Select dayselect = new Select(day);
 			
-		     Select daysel = new Select(day);			
-			
-		     daysel.selectByVisibleText("23");
-		     
-		     Thread.sleep(2000);
-		     
-		     daysel.selectByIndex(15);
-		     
-		     Thread.sleep(2000);
-		     
-		     daysel.selectByValue("10");
+			dayselect.selectByIndex(29);
+			Thread.sleep(2000);
+			dayselect.selectByValue("11");
+			Thread.sleep(2000);
 
+			dayselect.selectByVisibleText("12");
 		     
 		
 		
